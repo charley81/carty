@@ -2,7 +2,7 @@
 
 > a shopping cart component built with React.js
 
-## Things Learning
+## Things learnt with this project
 
 - HTML, CSS => Building UI's
 - useReducer
