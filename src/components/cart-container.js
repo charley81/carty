@@ -26,6 +26,9 @@ const CartContainer = () => {
       {/* card header */}
       <Title />
       {/* list items */}
+      {cart.map(item => (
+        <CartItem key={item.id} {...item} />
+      ))}
       {/* footer */}
     </section>
   )

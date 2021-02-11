@@ -24,3 +24,5 @@ const data = [
     amount: 1,
   },
 ]
+
+export default data
