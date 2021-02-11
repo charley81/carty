@@ -44,8 +44,8 @@ const Navbar = () => {
           font-size: 1.1rem;
           background: var(--secondaryColor);
           position: absolute;
-          top: -10px;
-          left: 90%;
+          top: -5px;
+          left: 70%;
           padding: 0.25rem;
           border-radius: var(--borderRadius);
         }

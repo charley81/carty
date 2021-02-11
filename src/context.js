@@ -6,7 +6,7 @@ const AppContext = createContext()
 
 const initialState = {
   loading: false,
-  cartItems: data,
+  cart: data,
   total: 0,
   amount: 0,
 }
