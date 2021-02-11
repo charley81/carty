@@ -11,6 +11,12 @@
   --darkColor: #2b2118;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--fontFamily);
   font-size: 18px;
