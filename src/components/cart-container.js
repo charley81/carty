@@ -25,7 +25,7 @@ const CartContainer = () => {
   return (
     <section
       css={css`
-        max-width: 500px;
+        max-width: var(--maxWidth);
         margin: auto;
       `}
     >

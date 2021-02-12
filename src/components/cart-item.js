@@ -5,7 +5,7 @@ import { BsArrowUp, BsArrowDown } from 'react-icons/bs'
 import { useGlobalContext } from '../context.js'
 
 const CartItem = ({ id, img, title, price, amount }) => {
-  const { removeItem } = useGlobalContext()
+  const { removeItem, increaseAmount, decreaseAmount } = useGlobalContext()
 
   return (
     <article
@@ -21,6 +21,10 @@ const CartItem = ({ id, img, title, price, amount }) => {
           width: 8rem;
           height: 8rem;
           object-fit: cover;
+        }
+
+        .title {
+          color: var(darkColor);
         }
 
         .price {
@@ -52,8 +56,8 @@ const CartItem = ({ id, img, title, price, amount }) => {
 
       {/* phone info */}
       <div className="info">
-        <h4 className="title">{title}</h4>
-        <h4 className="price">{price}</h4>
+        <p className="title">{title}</p>
+        <p className="price">{price}</p>
         <button className="remove" onClick={() => removeItem(id)}>
           remove
         </button>
@@ -61,11 +65,11 @@ const CartItem = ({ id, img, title, price, amount }) => {
 
       {/* increase/decrease buttons */}
       <div className="btn-container">
-        <button className="increase">
+        <button className="increase" onClick={() => increaseAmount(id)}>
           <BsArrowUp />
         </button>
         <p className="amount">{amount}</p>
-        <button className="decrease">
+        <button className="decrease" onClick={() => decreaseAmount(id)}>
           <BsArrowDown />
         </button>
       </div>
