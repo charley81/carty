@@ -7,6 +7,8 @@ const CartItem = ({ id, img, title, price, amount }) => {
   return (
     <article
       css={css`
+        display: grid;
+        grid-template-columns: auto 1fr auto;
         img {
           width: 100px;
           height: 100px;
