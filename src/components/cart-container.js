@@ -22,7 +22,12 @@ const CartContainer = () => {
   }
 
   return (
-    <section>
+    <section
+      css={css`
+        max-width: 500px;
+        margin: auto;
+      `}
+    >
       {/* card header */}
       <Title />
       {/* list items */}

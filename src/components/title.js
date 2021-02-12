@@ -11,8 +11,7 @@ const Title = () => {
 
         h1 {
           border-bottom: 1px dotted var(--secondaryColor);
-          width: 25%;
-          margin: 0 auto 2rem;
+          margin: 0 1rem 2rem;
         }
       `}
     >
