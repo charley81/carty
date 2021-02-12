@@ -12,6 +12,7 @@ const CartItem = ({ id, img, title, price, amount }) => {
         align-items: center;
         grid-column-gap: 1.5rem;
         margin: 1.5rem 0;
+        padding: 1rem;
 
         img {
           width: 8rem;

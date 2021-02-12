@@ -13,6 +13,7 @@ const Navbar = () => {
         background-color: var(--primaryColor);
         color: var(--lightColor);
         padding: 1rem;
+        width: 100%;
 
         span {
           color: var(--secondaryColor);

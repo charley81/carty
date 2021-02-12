@@ -3,6 +3,7 @@ import React from 'react'
 import { css } from '@emotion/react'
 import CartItem from './cart-item'
 import Title from './title'
+import Footer from './footer'
 import { useGlobalContext } from '../context'
 
 const CartContainer = () => {
@@ -35,6 +36,7 @@ const CartContainer = () => {
         <CartItem key={item.id} {...item} />
       ))}
       {/* footer */}
+      <Footer />
     </section>
   )
 }

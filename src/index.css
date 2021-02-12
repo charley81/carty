@@ -4,7 +4,7 @@
   --fontFamily: 'Nunito', sans-serif;
   --maxWidth: 700px;
   --borderRadius: 3px;
-  --transition: all 0.3s ease;
+  --transition: all 0.3s ease-in-out;
   --primaryColor: #011936;
   --secondaryColor: #465362;
   --lightColor: #f1f2f6;
