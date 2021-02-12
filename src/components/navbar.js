@@ -2,7 +2,7 @@
 import React from 'react'
 import { css } from '@emotion/react'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
-import { useGlobalContext } from '../context'
+import { useGlobalContext } from '../context.js'
 
 const Navbar = () => {
   const { amount } = useGlobalContext()
@@ -44,9 +44,6 @@ const Navbar = () => {
         p {
           font-size: 1.1rem;
           background: var(--secondaryColor);
-          position: absolute;
-          top: -5px;
-          left: 70%;
           padding: 0.25rem;
           border-radius: var(--borderRadius);
         }

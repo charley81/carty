@@ -2,10 +2,10 @@
 import React from 'react'
 import { css } from '@emotion/react'
 import { BsArrowUp, BsArrowDown } from 'react-icons/bs'
-import { useGlobalContext } from '../context.js'
+import { useGlobalContext } from '../context'
 
 const CartItem = ({ id, img, title, price, amount }) => {
-  const { removeItem, increaseAmount, decreaseAmount } = useGlobalContext()
+  const { removeItem, toggleAmount } = useGlobalContext()
 
   return (
     <article
@@ -65,11 +65,11 @@ const CartItem = ({ id, img, title, price, amount }) => {
 
       {/* increase/decrease buttons */}
       <div className="btn-container">
-        <button className="increase" onClick={() => increaseAmount(id)}>
+        <button className="increase" onClick={() => toggleAmount(id, 'inc')}>
           <BsArrowUp />
         </button>
         <p className="amount">{amount}</p>
-        <button className="decrease" onClick={() => decreaseAmount(id)}>
+        <button className="decrease" onClick={() => toggleAmount(id, 'dec')}>
           <BsArrowDown />
         </button>
       </div>
