@@ -2,7 +2,7 @@
 import React from 'react'
 import { css } from '@emotion/react'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
-import { useGlobalContext } from '../context.js'
+import { useGlobalContext } from '../context'
 
 const Navbar = () => {
   const { amount } = useGlobalContext()
