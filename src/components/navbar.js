@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react'
 import { css } from '@emotion/react'
+import React from 'react'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { useGlobalContext } from '../context'
 
